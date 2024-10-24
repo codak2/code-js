@@ -1,6 +1,10 @@
+// ========= For new JS version =============
 "use strict"; // treat all JS code as newer version
 
 // alert( 3 + 3) // we are using nodejs, not browser
+
+// ========= Code Readability =============
+// Code should be readable properly.
 
 console.log(3 
     +
@@ -8,6 +12,7 @@ console.log(3
 
 console.log("Hitesh")
 
+// =========== Data types =============
 
 let name = "hitesh"
 let age = 18
@@ -19,7 +24,7 @@ let state;
 // string => ""
 // boolean => true/false
 // null => standalone value
-// undefined => 
+// undefined => no value defined
 // symbol => unique
 
 
