@@ -1,3 +1,6 @@
+// =============== Type Conversion ===============
+console.log("=============== Type Conversion ===============");
+
 let score = "10"
 let score2 = "10xyz"
 let score3 = null
@@ -90,3 +93,47 @@ console.log(typeof valueInString5, valueInString5);
 // null                 null                string
 // undefined            undefined           string
 // true                 true                string
+
+
+
+// =============== Operations ===============
+console.log("=============== Operations ===============");
+
+let value = 10
+let negValue = -value
+console.log(negValue);
+
+console.log(2+4);
+console.log(2-4);
+console.log(2*4);
+console.log(2**4);
+console.log(2/4);
+console.log(2%4);
+
+let str1 = "Hello"
+let str2 = " user"
+
+console.log(str1 + str2); // Hello user
+
+console.log("1" + 2); // 12
+console.log(1 + "2"); // 12
+console.log("1" + 2 + 2); // 122 // every element treated as string
+console.log(1 + 2 + "2"); // 32 // calculate numbers first and convert to string
+
+console.log((2+3) * (4 / 3)); // code readability by use of ()
+
+console.log(+true); // 1 
+console.log(+""); // 0
+
+let a, b, c
+
+a = b = c = 2+4
+
+let gameCounter = 100
+gameCounter++
+++gameCounter
+console.log(gameCounter);
+
+
+// link to study
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
