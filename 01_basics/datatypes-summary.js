@@ -54,3 +54,48 @@ Return type of variables in JavaScript
 */
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* 
+datatypes are based on memory allocation
+Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) -> Stack memory
+
+Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable when you declare it.
+
+Stack (Primitive), Heap (Non-Primitive)
+
+*/ 
+
+
+let myName = "ABC"
+
+let mySecondName = myName
+mySecondName = "XYZ"
+
+console.log(myName);
+console.log(mySecondName);
+
+
+
+let personOne = {
+    id: 123,
+    name: "ABC",
+    email: "abc@google.com"
+} 
+
+let personTwo = personOne;
+
+// before changing
+console.log(personOne);
+console.log(personTwo);
+
+personTwo.name="XYZ"
+
+// after changing
+console.log(personOne);
+console.log(personTwo);
+
