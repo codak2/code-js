@@ -18,9 +18,11 @@ console.log(gameName.indexOf('t'));
 
 const newString = gameName.substring(0, 4)
 console.log(newString);
+// hite
 
 const anotherString = gameName.slice(-8, 4)
 console.log(anotherString);
+//returns blank space
 
 const newStringOne = "   hitesh    "
 console.log(newStringOne);
@@ -28,8 +30,8 @@ console.log(newStringOne.trim());
 
 const url = "https://hitesh.com/hitesh%20choudhary"
 
-console.log(url.replace('%20', '-'))
+console.log(url.replace('%20', '-')) // https://hitesh.com/hitesh-choudhary
 
-console.log(url.includes('sundar'))
+console.log(url.includes('sundar')) // false
 
-console.log(gameName.split('-'));
+console.log(gameName.split('-')); // ['hitesh','hc','com']
